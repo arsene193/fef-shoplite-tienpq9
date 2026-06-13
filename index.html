@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+      <link rel="stylesheet" href="css/style.css">
+
+    <title>ShopLite</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom sticky-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="index.html">ShopLite</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-2 align-items-center">
+                    <li class="nav-item"><a class="nav-link active" href="index.html">Shop</a></li>
+                    <li class="nav-item"><a class="nav-link" href="register.html">Register</a></li>
+                    <li class="nav-item"><a class="btn btn-outline-dark position-relative ms-2" href="cart.html">
+                        <i class="bi bi-cart3"></i>Cart
+                          <span id="cart-badge" class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger d-none">0</span>
+                    </a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+   <header class="bg-light py-5 border-bottom">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 text-center text-lg-start mb-4 mb-lg-0">
+                    <h1 class="display-4  text-dark">Welcome to ShopLite</h1>
+                    <p class="lead text-muted mb-4">Discover curated fashion, accessories, and electronics at competitive prices.</p>
+                    <a href="#product-list" class="btn btn-dark btn-lg px-4">Shop Now</a>
+                </div>
+                <div class="col-lg-6 text-center">
+                    <img src="assets/banner-img.webp" 
+                         alt="ShopLite Promotion Banner" 
+                         class="img-fluid rounded shadow-sm"
+                         style="max-height: 350px; width: 100%; object-fit: cover;">
+                </div>
+            </div>
+        </div>
+    </header>
+ <!-- Main  -->
+    <main class="container my-5">
+        <div class="row g-3 justify-content-between align-items-center mb-4">
+            <div class="col-md-4">
+                <input type="text" id="search-input" class="form-control" placeholder="Search product...">
+
+            </div>
+            <div class="col-md-4">
+                <select id="category-filter" class="form-select">
+                    <option value="all">All Category</option>
+                </select>
+
+            </div>
+            <div class="col-md-3">
+                <select id="price-sort" class="form-select">
+                    <option value="default">Sort by...</option>
+                    <option value="low-high">Price : Low to High</option>
+                    <option value="high-low">Price : High to Low</option>
+                </select>
+            </div>
+        </div>
+
+        <div id="loading-spinner" class="text-center my-5">
+            <div class="spinner-border text-primary" role="status"></div> 
+            <p class="mt-2 text-muted">Loading products...</p>
+        </div>
+        <div id="error-message" class="alert alert-danger d-none my-5">
+            Failed to load products. Please try again later !
+        </div>
+        <div id="product-list" class="product-grid"></div>
+    </main>
+
+    <!---Footer-->
+    <footer class="bg-dark text-white py-4 mt-auto">
+        <div class="container text-center">
+            <p class="mb-1">&copy; 2024 ShopLite. All rights reserved.</p>
+            <small class="text-muted">TienPQ9</small>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script type="module" src="js/home.js"></script>
+
+</body>
+</html>

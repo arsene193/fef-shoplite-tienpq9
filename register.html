@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom sticky-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="index.html">ShopLite</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-2 align-items-center">
+                    <li class="nav-item"><a class="nav-link active" href="index.html">Shop</a></li>
+                    <li class="nav-item"><a class="nav-link" href="register.html">Register</a></li>
+                    <li class="nav-item"><a class="btn btn-outline-dark position-relative ms-2" href="cart.html">
+                        <i class="bi bi-cart3"></i>Cart
+                          <span id="cart-badge" class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger d-none">0</span>
+                    </a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container my-5" style="max-width: 500px;">
+    <div class="card border-0 shadow-sm p-4 bg-white">
+      <h2 class="h4 text-center mb-4 fw-bold">Create an Account</h2>
+      
+      <div id="success-alert" class="alert alert-success d-none" role="alert">
+        Registration successful! Your account has been created.
+      </div>
+
+      <form id="register-form" novalidate>
+    
+        <div class="mb-3">
+          <label for="fullname" class="form-label">Full Name</label>
+          <input type="text" id="fullname" class="form-control">
+          <small class="text-danger error-msg d-none" id="fullname-error"></small>
+        </div>
+
+        <div class="mb-3">
+          <label for="email" class="form-label">Email Address</label>
+          <input type="email" id="email" class="form-control" >
+          <small class="text-danger error-msg d-none" id="email-error"></small>
+        </div>
+
+ 
+        <div class="mb-3">
+          <label for="password" class="form-label">Password</label>
+          <input type="password" id="password" class="form-control" >
+          <small class="text-danger error-msg d-none" id="password-error"></small>
+        </div>
+
+ 
+        <div class="mb-3">
+          <label for="phone" class="form-label">Phone Number</label>
+          <input type="tel" id="phone" class="form-control" >
+          <small class="text-danger error-msg d-none" id="phone-error"></small>
+        </div>
+
+    
+        <div class="mb-3 form-check">
+          <input type="checkbox" class="form-check-input" id="terms">
+          <label class="form-check-label small" for="terms">I agree to the Terms and Conditions</label>
+          <div class="text-danger error-msg d-none small mt-1" id="terms-error"></div>
+        </div>
+
+        <button type="submit" class="btn btn-dark w-100">Register</button>
+      </form>
+    </div>
+  </main>
+  <!---Footer-->
+    <footer class="bg-dark text-white py-4 mt-auto">
+        <div class="container text-center">
+            <p class="mb-1">&copy; 2024 ShopLite. All rights reserved.</p>
+            <small class="text-muted">TienPQ9</small>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script type="module" src="js/register.js"></script>
+</body>
+</html>
