@@ -2,7 +2,7 @@
 
 ShopLite is a client-side multi-page e-commerce application that fetches real-time product data. This project demonstrates responsive layouts using CSS Flexbox/Grid alongside native JavaScript DOM and State management.
 
-- **Demo URL:** [https://fef-shoplite-tienpq9.vercel.app/]()
+- **Demo URL:** [https://fef-shoplite-tienpq9.vercel.app/](https://fef-shoplite-tienpq9.vercel.app/)
 - **GitHub Repository:** [https://github.com/arsene193/fef-shoplite-tienpq9](https://github.com/arsene193/fef-shoplite-tienpq9)
 
 ## 📸 Screenshots
